@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="15" height="15">
+  <defs>
+    <linearGradient id="omacakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AAF5A0" />
+      <stop offset="25%" stop-color="#A0F5E1" />
+      <stop offset="50%" stop-color="#C8AAFA" />
+      <stop offset="75%" stop-color="#FAD7E1" />
+      <stop offset="100%" stop-color="#FFF0B9" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#omacakeGrad)" d="M0,0 h15 v1 h-15 Z M0,1 h1 v1 h-1 Z M7,1 h1 v1 h-1 Z M14,1 h1 v1 h-1 Z M0,2 h1 v1 h-1 Z M2,2 h6 v1 h-6 Z M11,2 h2 v1 h-2 Z M14,2 h1 v1 h-1 Z M0,3 h1 v1 h-1 Z M2,3 h1 v1 h-1 Z M12,3 h1 v1 h-1 Z M14,3 h1 v1 h-1 Z M0,4 h1 v1 h-1 Z M2,4 h1 v1 h-1 Z M12,4 h1 v1 h-1 Z M14,4 h1 v1 h-1 Z M0,5 h1 v1 h-1 Z M2,5 h1 v1 h-1 Z M12,5 h1 v1 h-1 Z M14,5 h1 v1 h-1 Z M0,6 h1 v1 h-1 Z M2,6 h1 v1 h-1 Z M12,6 h1 v1 h-1 Z M14,6 h1 v1 h-1 Z M0,7 h3 v1 h-3 Z M12,7 h1 v1 h-1 Z M14,7 h1 v1 h-1 Z M0,8 h1 v1 h-1 Z M2,8 h1 v1 h-1 Z M12,8 h1 v1 h-1 Z M14,8 h1 v1 h-1 Z M0,9 h1 v1 h-1 Z M2,9 h1 v1 h-1 Z M12,9 h1 v1 h-1 Z M14,9 h1 v1 h-1 Z M0,10 h1 v1 h-1 Z M2,10 h1 v1 h-1 Z M12,10 h1 v1 h-1 Z M14,10 h1 v1 h-1 Z M0,11 h1 v1 h-1 Z M2,11 h1 v1 h-1 Z M12,11 h1 v1 h-1 Z M14,11 h1 v1 h-1 Z M0,12 h1 v1 h-1 Z M2,12 h11 v1 h-11 Z M14,12 h1 v1 h-1 Z M0,13 h1 v1 h-1 Z M7,13 h1 v1 h-1 Z M14,13 h1 v1 h-1 Z M0,14 h8 v1 h-8 Z M9,14 h6 v1 h-6 Z" />
+</svg>

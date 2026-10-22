@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+"""Prints the OMACAKE ASCII art with a pastel horizontal gradient (24-bit color)."""
+
+ART = r"""
+                 ▄▄▄
+ ▄█████▄    ▄███████████▄     ▄███████   ▄███████    ▄███████  ███    ███  █████████
+███   ███  ███   ███   ███   ███   ███  ███   ███   ███   ███  ███   ███   ███
+███   ███  ███   ███   ███   ███   ███  ███   █▀    ███   ███  ███  ███    ███
+███   ███  ███   ███   ███  ▄███▄▄▄███  ███        ▄███▄▄▄███  ███▄███     ███▄▄▄▄
+███   ███  ███   ███   ███  ▀███▀▀▀███  ███        ▀███▀▀▀███  ███▀███     ███▀▀▀▀
+███   ███  ███   ███   ███   ███   ███  ███   █▄    ███   ███  ███  ███    ███
+███   ███  ███   ███   ███   ███   ███  ███   ███   ███   ███  ███   ███   ███
+ ▀█████▀    ▀█   ███   █▀    ███   █▀   ███████▀    ███   █▀   ███    ███  █████████
+"""
+
+STOPS = [(170, 245, 160), (160, 245, 225), (200, 170, 250), (250, 215, 225), (255, 240, 185)]
+
+def color_at(t):
+    t = max(0.0, min(1.0, t))
+    seg = t * (len(STOPS) - 1)
+    i = min(int(seg), len(STOPS) - 2)
+    f = seg - i
+    a, b = STOPS[i], STOPS[i + 1]
+    return tuple(round(a[k] + (b[k] - a[k]) * f) for k in range(3))
+
+def main():
+    lines = ART.strip("\n").split("\n")
+    width = max(len(l) for l in lines)
+    for line in lines:
+        out = []
+        for x, ch in enumerate(line):
+            if ch == " ":
+                out.append(ch)
+                continue
+            r, g, b = color_at(x / max(width - 1, 1))
+            out.append(f"\033[38;2;{r};{g};{b}m{ch}")
+        print("".join(out) + "\033[0m")
+
+if __name__ == "__main__":
+    main()
